@@ -1,4 +1,5 @@
 import React from 'react';
+import { GiPaperPlane } from "react-icons/gi";
 
 const MessageForm = ({
   handleSubmit,
@@ -19,7 +20,7 @@ const MessageForm = ({
           onChange={handleChange}
           name="message"
           value={values.message}
-          placeholder="Quoi de neuf ?"
+          placeholder="What's about ?"
         />
       </div>
 
@@ -27,7 +28,9 @@ const MessageForm = ({
 
       <footer>
         <p>{280 - values.message.length}</p>
-        <button type="submit" disabled={values.message.length > 280 || values.message.length === 0}>Tweeter</button>
+        <button type="submit" disabled={values.message.length > 280 || values.message.length === 0}>
+          <GiPaperPlane />
+        </button>
       </footer>
     </form>
   );
