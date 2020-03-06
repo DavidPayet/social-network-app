@@ -11,7 +11,9 @@ import useAuth from '../hooks/useAuth';
 const App = () => {
   const user = useAuth()
   return (
+    
     <FirebaseContext.Provider value={{ user, firebase }}>
+      <img className="logo" src="/medias/logo1.1-2.png" alt="logo" />
     <div className='App'>
       <Header />
       <CreateMessage />

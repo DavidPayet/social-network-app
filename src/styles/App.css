@@ -1,17 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
 body {
   color: #14171a;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #2a2a2a;
+  padding-bottom: 120px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.app {
-  max-width: 600px;
+.logo {
+  width: 150px;
+  height: auto;
+  align-items: center;
+  display: flex;
   margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.App {
+  max-width: 600px;
+  background: #2a2a2a;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2),
+              5px 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
 
 .header {
-  border: 1px solid #dbdcdc;
   border-top: 0;
   display: flex;
   padding: 0.5rem;
@@ -21,12 +39,14 @@ body {
 .header-title {
   flex: 1;
   margin: 0.5rem 0;
-  font-weight: 900;
   font-size: 1.4rem;
+  font-family: 'Trade Winds', cursive;
+  text-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2),
+  2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 .login-btn {
-  background: #3b5998;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -34,13 +54,19 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 500px;
-  transition: 200ms;
+  transition: 100ms;
   cursor: pointer;
   outline: none;
+  margin-left: 100px;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2),
+              2px 2px 6px rgba(0, 0, 0, 0.8);
+  border: none;
 }
 
 .login-btn:hover {
-  opacity: 0.9;
+  opacity: 0.5;
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2),
+              inset 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .login-btn > * {
@@ -57,9 +83,8 @@ body {
 .message-form-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid #e6ecf0;
-  border-width: 0 1px 12px;
   padding: 0.5rem 1rem;
+  background-color: #2a2a2a;
 }
 
 .message-form {
@@ -72,12 +97,24 @@ body {
   padding: 0 0 0.5rem;
   outline: none;
   font-size: 1.2rem;
+  background-color: #2a2a2a;
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2),
+              inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+}
+
+.message-form > textarea::placeholder {
+  font-weight: 50;
+  color: rgb(109, 106, 106);
 }
 
 .message-form-container > footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .message-form-container > footer > button {
@@ -85,27 +122,35 @@ body {
   border-radius: 500px;
   padding: 0.4rem 1rem;
   font-weight: 700;
-  background: #1da1f2;
   color: #fff;
-  margin-left: 0.5rem;
+  margin-left: 20px;
   outline: none;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2),
+              2px 2px 6px rgba(0, 0, 0, 0.8);
+  border: none;
 }
 
 .message-form-container > footer > button:disabled {
   opacity: 0.5;
+  pointer-events: none;
+}
+
+.message-form-container > footer > button:hover {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2),
+              inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: #1da1f2;
 }
 
 .message-container {
   display: flex;
-  border: 1px solid #e6ecf0;
-  border-width: 0 1px 1px;
+  border-top: 1px solid white;
   padding: 0.5rem 1rem;
-  transition: 200ms;
+  transition: 50ms;
   cursor: pointer;
 }
 
 .message-container:hover {
-  background: #f5f8fa;
+  opacity: 0.5;
 }
 
 .message {
@@ -116,10 +161,11 @@ body {
   display: flex;
 }
 
-.message > header > h3 > span {
-  color: #657786;
-  font-weight: 400;
+.message > header > span {
+  font-weight: lighter;
   margin-left: 2px;
+  opacity: 0.5;
+  color: white;
 }
 
 .message > header h3,
@@ -127,6 +173,8 @@ p {
   margin: 0;
   font-size: 1rem;
   white-space: pre-wrap;
+  font-weight: lighter;
+  color: white;
 }
 
 .message > footer {

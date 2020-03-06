@@ -6,7 +6,7 @@ const Header = () => {
   const { user, firebase } = useContext(FirebaseContext)
   return (
     <div className="header">
-      <h1 className="header-title">SocialNetworkApp</h1>
+      <h1 className="header-title">2PY1F</h1>
       {user ? (
       <button
         onClick={() => firebase.logout()}
