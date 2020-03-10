@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
-body {
-  color: #14171a;
-  display: flex;
+.home {
   justify-content: center;
   align-items: center;
-  background: #2a2a2a;
-  padding-bottom: 120px;
-  padding-right: 20px;
-  padding-left: 20px;
+  background: #131419;
+  padding-bottom: 200px;
 }
 
 .logo {
@@ -23,53 +19,51 @@ body {
 
 .App {
   max-width: 600px;
-  background: #2a2a2a;
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2),
-              5px 5px 15px rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
+  background: #131419;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+  margin: auto;
 }
 
 .header {
   border-top: 0;
   display: flex;
-  padding: 0.5rem;
-  align-items: center;
+  padding: 25px;
 }
 
 .header-title {
   flex: 1;
-  margin: 0.5rem 0;
-  font-size: 1.4rem;
-  font-family: 'Trade Winds', cursive;
+  font-size: 1.9rem;
+  letter-spacing: .4rem;
+  font-family: 'Amatic SC', cursive;
   text-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2),
-  2px 2px 6px rgba(0, 0, 0, 0.8);
-  color: white;
+    2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: #c9cbd7;
 }
 
-.login-btn {
-  color: #fff;
+.logout-btn {
+  background-color: #131419;
+  color: #3dacd0;
   border: none;
   padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 500px;
-  transition: 100ms;
+  transition: 25ms;
   cursor: pointer;
   outline: none;
   margin-left: 100px;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2),
-              2px 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
   border: none;
 }
 
-.login-btn:hover {
-  opacity: 0.5;
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2),
-              inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+.logout-btn:hover {
+  opacity: 0.7;
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-.login-btn > * {
+.logout-btn>* {
   margin-right: 0.5rem;
 }
 
@@ -83,101 +77,102 @@ body {
 .message-form-container {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem;
-  background-color: #2a2a2a;
+  padding: 8px 25px;
+  background: #131419;
+
 }
 
 .message-form {
   display: flex;
 }
 
-.message-form > textarea {
+.message-form>textarea {
   border: none;
   width: 100%;
-  padding: 0 0 0.5rem;
   outline: none;
   font-size: 1.2rem;
-  background-color: #2a2a2a;
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2),
-              inset 2px 2px 6px rgba(0, 0, 0, 0.8);
-  color: white;
+  background: #131419;
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: #c9cbd7;
   padding: 5px 10px;
+  border-radius: 10px;
+  height: 100px;
 }
 
-.message-form > textarea::placeholder {
+
+.message-form>textarea::placeholder {
   font-weight: 50;
   color: rgb(109, 106, 106);
 }
 
-.message-form-container > footer {
+.message-form-container>footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
-.message-form-container > footer > button {
+.message-form-container>footer>button {
+  background-color: #131419;
   align-self: flex-end;
   border-radius: 500px;
   padding: 0.4rem 1rem;
   font-weight: 700;
-  color: #fff;
+  color: #3dacd0;
   margin-left: 20px;
   outline: none;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2),
-              2px 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
   border: none;
 }
 
-.message-form-container > footer > button:disabled {
+.message-form-container>footer>button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.message-form-container > footer > button:hover {
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2),
-              inset 2px 2px 6px rgba(0, 0, 0, 0.8);
-  color: #1da1f2;
+.message-form-container>footer>button:hover {
+  opacity: 0.7;
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: #3dacd0;
 }
 
 .message-container {
   display: flex;
-  border-top: 1px solid white;
-  padding: 0.5rem 1rem;
+  border-top: 1px solid #2A3944;
+  padding: 8px 25px;
   transition: 50ms;
   cursor: pointer;
-}
-
-.message-container:hover {
-  opacity: 0.5;
 }
 
 .message {
   width: 100%;
 }
 
-.message > header {
+.message>header {
   display: flex;
+  align-items: center;
 }
 
-.message > header > span {
+.message>header>span {
   font-weight: lighter;
   margin-left: 2px;
   opacity: 0.5;
-  color: white;
+  color: #c9cbd7;
 }
 
-.message > header h3,
+.message>header h3,
 p {
   margin: 0;
   font-size: 1rem;
   white-space: pre-wrap;
   font-weight: lighter;
-  color: white;
+  color: #c9cbd7;
 }
 
-.message > footer {
+.message>footer {
   display: flex;
   justify-content: space-between;
   color: #657786;
@@ -196,33 +191,47 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  transition: 200ms;
+  transition: 25ms;
+
+  background-color: #131419;
+  border-radius: 100%;
+  outline: none;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.icon-container:hover {
+  opacity: 0.7;
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .icon-text {
   margin-left: 0.2rem;
 }
 
-.icon-group:hover > .icon-blue {
-  color: #1da1f2;
-  background: #e8f5fe;
-}
-.icon-group:hover > .icon-text-blue {
+.icon-group:hover>.icon-blue {
   color: #1da1f2;
 }
-.icon-group:hover > .icon-green {
-  color: #5cb85c;
-  background: #e1f1e1;
+
+.icon-group:hover>.icon-text-blue {
+  color: #1da1f2;
 }
-.icon-group:hover > .icon-text-green {
+
+.icon-group:hover>.icon-green {
   color: #5cb85c;
 }
-.icon-group:hover > .icon-red {
+
+.icon-group:hover>.icon-text-green {
+  color: #5cb85c;
+}
+
+.icon-group:hover>.icon-red {
   color: #d9534f;
-  background: #f1dbdb;
 }
-.icon-group:hover > .icon-text-red {
+
+.icon-group:hover>.icon-text-red {
   color: #d9534f;
 }
 
