@@ -9,9 +9,6 @@ class Firebase {
     app.initializeApp(firebaseConfig)
     this.auth = app.auth()
     this.facebookProvider = new app.auth.FacebookAuthProvider()
-    /* this.githubProvider = new app.auth.GithubAuthProvider()
-    this.googleProvider = new app.auth.GoogleAuthProvider()
-    this.tweeterProvider = new app.auth.TweeterAuthProvider() */
     this.db = app.firestore()
   }
   login = async provider => {

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { FaFacebook/* , FaGoogle, FaTwitter */ } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
 import '../styles/ConnectionPage.css';
 import FirebaseContext from '../firebase/context';
 
@@ -34,16 +34,6 @@ const ConnectionPage = () => {
             <FaFacebook className="login-icons" /> Facebook
           </button>
         </Row>
-        {/* <Row>
-          <button className="login-btn">
-            <FaGoogle className="login-icons" /> Google
-          </button>
-        </Row>
-        <Row>
-          <button className="login-btn">
-            <FaTwitter className="login-icons" /> Twitter
-          </button>
-        </Row> */}
       </Container>
     </div>
   );

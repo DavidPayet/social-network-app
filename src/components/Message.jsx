@@ -2,10 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { FirebaseContext } from '../firebase';
 import {
   FiHeart,
-  FiX/* ,
-  FiMessageCircle,
-  FiUpload,
-  FiRefreshCw */
+  FiX
 } from 'react-icons/fi';
 import { formatDistanceToNow } from 'date-fns';
 import { fr } from 'date-fns/locale';
@@ -58,12 +55,6 @@ const Message = ({ message }) => {
         <p>{message.message}</p>
         {user && (
           <footer>
-            {/* <IconContainer color="blue">
-              <FiMessageCircle />
-            </IconContainer>
-            <IconContainer color="green">
-              <FiRefreshCw />
-            </IconContainer> */}
             <IconContainer
               onClick={handleLike}
               count={message.likes.length}
@@ -72,9 +63,6 @@ const Message = ({ message }) => {
             >
               <FiHeart />
             </IconContainer>
-            {/* <IconContainer color="blue">
-              <FiUpload />
-            </IconContainer> */}
             {isOwner && (
               <IconContainer
                 onClick={handleDeleteMessage}
