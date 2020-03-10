@@ -1,10 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './pages/App'
-import 'sanitize.css'
-import 'sanitize.css/forms.css'
-import 'sanitize.css/typography.css'
-import * as serviceWorker from './serviceWorker'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './pages/App';
+import 'sanitize.css';
+import 'sanitize.css/forms.css';
+import 'sanitize.css/typography.css';
+import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(<App />, document.getElementById('root'))
 
