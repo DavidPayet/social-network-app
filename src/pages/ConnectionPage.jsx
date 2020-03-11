@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { FaFacebook, FaTwitter, FaGoogle } from 'react-icons/fa';
-import { FaFacebook } from 'react-icons/fa';
 
 import '../styles/ConnectionPage.css';
 import FirebaseContext from '../firebase/context';
@@ -46,7 +45,11 @@ const ConnectionPage = () => {
           </button>
         </Row>
         <Row>
-          <button className="login-btn">
+          <button
+            className="login-btn"
+            onClick={() => firebase.login('google')}
+            type="submit"
+          >
             <FaGoogle className="login-icons" /> Google
           </button>
         </Row>
