@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { FaFacebook, FaTwitter/* , FaGoogle  */ } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaGoogle } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 
 import '../styles/ConnectionPage.css';
