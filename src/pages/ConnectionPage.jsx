@@ -36,11 +36,6 @@ const ConnectionPage = () => {
             <FaFacebook className="login-icons" /> Facebook
           </button>
         </Row>
-        {/* <Row>
-          <button className="login-btn">
-            <FaGoogle className="login-icons" /> Google
-          </button>
-        </Row> */}
         <Row>
           <button
             className="login-btn"
@@ -48,6 +43,11 @@ const ConnectionPage = () => {
             type="submit"
           >
             <FaTwitter className="login-icons" /> Twitter
+          </button>
+        </Row>
+        <Row>
+          <button className="login-btn">
+            <FaGoogle className="login-icons" /> Google
           </button>
         </Row>
       </Container>
