@@ -3,8 +3,8 @@
 .home {
   justify-content: center;
   align-items: center;
-  background: #131419;
-  padding-bottom: 200px;
+  background: #011844;
+  padding-bottom: 300px;
 }
 
 .logo {
@@ -19,9 +19,9 @@
 
 .App {
   max-width: 600px;
-  background: #131419;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0.8);
+  background: #011844;
+  box-shadow: 5px 5px 10px #000c23,
+    -5px -5px 10px #002e8b;
   border-radius: 30px;
   margin: auto;
 }
@@ -37,13 +37,13 @@
   font-size: 1.9rem;
   letter-spacing: .4rem;
   font-family: 'Amatic SC', cursive;
-  text-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2),
-    2px 2px 6px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 5px #000c23,
+    -2px -2px 5px #002e8b;
   color: #c9cbd7;
 }
 
 .logout-btn {
-  background-color: #131419;
+  background-color: #011844;
   color: #3dacd0;
   border: none;
   padding: 0.5rem 1rem;
@@ -52,15 +52,15 @@
   cursor: pointer;
   outline: none;
   margin-left: 100px;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 10px #000c23,
+    -5px -5px 10px #002e8b;
   border: none;
 }
 
 .logout-btn:hover {
   opacity: 0.7;
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 5px 5px 10px #000c23,
+    inset -5px -5px 10px #002e8b;
 }
 
 .logout-btn>* {
@@ -78,7 +78,7 @@
   display: flex;
   flex-direction: column;
   padding: 8px 25px;
-  background: #131419;
+  background: #011844;
 
 }
 
@@ -91,9 +91,9 @@
   width: 100%;
   outline: none;
   font-size: 1.2rem;
-  background: #131419;
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  background: #011844;
+  box-shadow: inset 5px 5px 10px #000c23,
+    inset -5px -5px 10px #002e8b;
   color: #c9cbd7;
   padding: 5px 10px;
   border-radius: 10px;
@@ -114,7 +114,7 @@
 }
 
 .message-form-container>footer>button {
-  background-color: #131419;
+  background-color: #011844;
   align-self: flex-end;
   border-radius: 500px;
   padding: 0.4rem 1rem;
@@ -122,8 +122,8 @@
   color: #3dacd0;
   margin-left: 20px;
   outline: none;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 10px #000c23,
+    -5px -5px 10px #002e8b;
   border: none;
 }
 
@@ -134,8 +134,8 @@
 
 .message-form-container>footer>button:hover {
   opacity: 0.7;
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 5px 5px 10px #000c23,
+    inset -5px -5px 10px #002e8b;
   color: #3dacd0;
 }
 
@@ -193,18 +193,18 @@ p {
   align-items: center;
   transition: 25ms;
 
-  background-color: #131419;
+  background-color: #011844;
   border-radius: 100%;
   outline: none;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 10px #000c23,
+    -5px -5px 10px #002e8b;
   border: none;
 }
 
 .icon-container:hover {
   opacity: 0.7;
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 5px 5px 10px #000c23,
+    inset -5px -5px 10px #002e8b;
 }
 
 .icon-text {
