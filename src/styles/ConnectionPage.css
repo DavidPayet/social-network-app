@@ -2,8 +2,7 @@
 
 .ConnectionPage {
   color: white;
-  background: #011844;
-  transition: 1000ms;
+  background: #1F4B7D;
 }
 
 .connectionPage {
@@ -14,8 +13,8 @@
 .title {
   letter-spacing: .4rem;
   font-family: 'Amatic SC', cursive;
-  text-shadow: 2px 2px 5px #000c23,
-    -2px -2px 5px #002e8b;
+  text-shadow: 2px 2px 5px #0c1e32,
+    -2px -2px 5px #3278c8;
   text-align: center;
   padding-bottom: 80px;
 }
@@ -51,7 +50,7 @@
 }
 
 .login-btn {
-  color: #3dacd0;
+  color: #d0843d;
   border: none;
   padding: 0.5rem 1rem;
   justify-content: center;
@@ -64,16 +63,15 @@
   margin-top: 20px;
   margin-bottom: 20px;
   min-width: 250px;
-
-  background: #011844;
-  box-shadow: 5px 5px 10px #000c23,
-    -5px -5px 10px #002e8b;
+  background: #1F4B7D;
+  box-shadow: 5px 5px 10px #0c1e32,
+    -5px -5px 10px #3278c8;
 }
 
 .login-btn:hover {
   opacity: 0.7;
-  box-shadow: inset 5px 5px 10px #000c23,
-    inset -5px -5px 10px #002e8b;
+  box-shadow: inset 5px 5px 10px #0c1e32,
+    inset -5px -5px 10px #3278c8;
 }
 
 .login-icons {
